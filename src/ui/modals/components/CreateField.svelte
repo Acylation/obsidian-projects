@@ -79,7 +79,7 @@
       [DataFieldType.Number]: (v: number) => v,
       [DataFieldType.Boolean]: (v: boolean) => (v ? 1 : 0),
       [DataFieldType.Date]: (v: string) =>
-        parseInt(Temporal.PlainDate.from(v).toString().replace(/-/g, "")), // 注意捕获错误
+        parseInt(Temporal.PlainDate.from(v).toString().replace(/-/g, "")),
       [DataFieldType.List]: (v: Array<string>) => parseInt(v.toString()),
       [DataFieldType.Unknown]: () => null,
     },

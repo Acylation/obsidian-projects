@@ -117,7 +117,7 @@
 
     if (
       recordDate.offset !== Temporal.Now.zonedDateTimeISO().offset ||
-      recordDate.timeZoneId !== localTz // TODO: check DST
+      recordDate.timeZoneId !== localTz
     ) {
       const displayNewDateTime = date
         .toZonedDateTime(localTz)

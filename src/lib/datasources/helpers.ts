@@ -47,7 +47,7 @@ export function parseRecords(
           break;
         case DataFieldType.String:
           if (typeof value !== "object") {
-            record.values[field.name] = value?.toLocaleString(); //TODO: fallback type, to be refined in type casting
+            record.values[field.name] = value?.toLocaleString();
           }
           break;
       }
